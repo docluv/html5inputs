@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Raw HTML5 Input Types</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link href="css/site.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <header>
+            <h1>HTML5 Input Demo</h1>
+            <nav>
+                <a href="inputtypes.html">Input Types</a>
+                <a href="inputstyling.html">Input Styling</a>
+                <a href="contraintvalidation.html">Constraint Validation</a>
+                <a href="dynamicdatalist.html">Data List</a>
+            </nav>
+        </header>
+        <section>
+            <form>
+                <fieldset>
+                    <legend>Leave A Review</legend>
+                    <ul class="vertical-list form-inputs">
+                        <li><input placeholder="Your Name" id="ReviewerName" tabindex="1" autocomplete="off" autocorrect="off" required autofocus /></li>
+                        <li><input type="email" placeholder="Your E-Mail" id="ReviewerEMail" tabindex="2" autocomplete="off" autocorrect="off" title="Please Enter Your E-Mail" /></li>
+                        <li><input type="tel" placeholder="Phone Number" id="ReviewerPhone" tabindex="3" autocomplete="off" autocorrect="off" pattern="^d{3}-d{3}-d{4}$" title="###-###-####" /></li>
+                        <li>Cc: <input type="email" multiple name="cc" list="contacts" /></li>
+                        <li><input type="search" name="searchField" placeholder="search" /></li>
+                        <li><input type="number" name="numberex" placeholder="number" /></li>
+                        <li><input name="zipcodeex" placeholder="US Zip Code" pattern="(\d{5}([\-]\d{4})?)" /></li>
+                        <li><input type="url" name="urlex" placeholder="URL" /></li>
+                        <li><input type="date" name="dateex" placeholder="Date" /></li>
+                        <li><input type="datetime" name="datetimeex" placeholder="Date Time" /></li>
+                        <li><input type="color" name="colorex" placeholder="Color" /></li>
+                        <li><input type="range" min="-100" max="100" value="0" step="10" name="power" list="powers">
+                        </li>
+                        <li> <label>Feeling: <input name="f" type="text" /></label></li>
+                        <li><input type="range" min="0" max="100" step="20" value="50"></li>
+                        <li><textarea placeholder="Enter Your Review" tabindex="4" id="MovieReview" autocorrect="on" required spellcheck="true"></textarea></li>
+                        <li><input type="submit" id="reviewSubmit" class="btn" tabindex="5" /></li>
+                    </ul>
+                    <datalist id="powers">
+                        <option value="0">
+                        <option value="-30">
+                        <option value="30">
+                        <option value="++50">
+                    </datalist>
+                    <datalist id="contacts">
+                        <option value="hedral@damowmow.com">
+                        <option value="pillar@example.com">
+                        <option value="astrophy@cute.example">
+                        <option value="astronomy@science.example.org">
+                    </datalist>
+                </fieldset>
+            </form>
+        </section>
+    </body>
+</html>

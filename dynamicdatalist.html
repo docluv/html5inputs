@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Styled HTML5 Input Types</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link href="css/site.css" rel="stylesheet" type="text/css" />
+        <link href="css/inputstyles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <header>
+            <h1>HTML5 Input Demo</h1>
+            <nav>
+                <a href="inputtypes.html">Input Types</a>
+                <a href="inputstyling.html">Input Styling</a>
+                <a href="contraintvalidation.html">Constraint Validation</a>
+                <a href="dynamicdatalist.html">Data List</a>
+            </nav>
+        </header>
+        <section>
+            <input id="email" type="email" multiple name="cc" list="contacts" />
+
+            <datalist id="contacts"></datalist>
+        </section>
+        <script>
+
+            
+            var emails = [{
+                "address": "hedral@damowmow.com"
+            }, {
+                "address": "pillar@example.com"
+            }, {
+                "address": "astrophy@cute.example"
+            }, {
+                "address": "astronomy@science.example.org"
+            }, {
+                "address": "clove@extremewebworks.com"
+            }],
+            email = document.getElementById("email"),
+            emaildl = document.getElementById("contacts");
+            
+            email.addEventListener("focus", setDL);
+            
+            function setDL(e) { 
+            
+                var i = 0, emlist = "";
+            
+                for(i = 0; i < emails.length; i++){
+                    emlist += "<option value='" + emails[i].address + "'>";
+                }   
+            
+                emaildl.innerHTML =  emlist;       
+            
+            }
+            
+        </script>
+
+    </body>
+</html>

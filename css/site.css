@@ -1,0 +1,110 @@
+body {
+    color: #1C2F40;
+    font-family: "Segoe UI", "Segoe WP", "ASAP", SegoeWP, Helvetica, Arial, tahoma;
+    font-size: 12px;
+    margin: 2em 10%;
+    padding: 0;
+    background-color: #D9D1BA;
+}
+
+h2 {
+    color: white;
+    font-size: 24pt;
+    font-weight: 100;
+}
+
+form, fieldset
+{
+    padding: 3em;
+}
+
+.block-item-list {
+    margin: 0px;
+    padding: 0px;
+    height: 400px;
+}
+
+.double-panel, .single-panel {
+    margin: 0px;
+    padding: 0px;
+    display: inline;
+    float: left;
+    height: 400px;
+}
+
+.double-panel {
+    width: 500px;
+}
+
+.single-panel {
+    width: 250px;
+}
+
+.block-item-medium, .block-item-large, .block-item-wide {
+    border: none;
+    padding: 4px;
+    margin: 12px 21px 12px 0px;
+    color: white;
+    background-color: #8094A6;
+    -webkit-box-shadow: 5px 5px 20px 0px #F2E9D8;
+    -moz-box-shadow: 5px 5px 20px 0px #F2E9D8;
+    box-shadow: 5px 5px 20px 0px #F2E9D8;
+    float: left;
+    list-style-type: none;
+}
+
+.block-item-large {
+    height: 96px;
+    width: 96px;
+}
+
+.block-item-medium {
+    height: 48px;
+    width: 48px;
+    background-color: #8094A6;
+}
+
+.block-item-wide {
+    height: 84px;
+    width: 168px;
+    background-color: #8094A6;
+}
+
+
+div.main-wrapper {
+    height: 600px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.vertical-list, .horizontal-list, .grid-list {
+    list-style-type: none;
+    margin: 0 6px 0 0;
+    padding: 0;
+}
+
+.form-inputs > li {
+    margin: 6px 0 6px 0;
+}
+
+nav {
+    width: 600px;
+    margin: 20px auto;
+}
+
+nav > a {
+    margin: 5px 15px 20px 15px;
+    padding: 5px 10px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    background-color: #8094A6;
+    -webkit-box-shadow: 5px 5px 20px 0px #F2E9D8;
+    -moz-box-shadow: 5px 5px 20px 0px #F2E9D8;
+    box-shadow: 5px 5px 20px 0px #F2E9D8;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
