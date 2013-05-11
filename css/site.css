@@ -13,8 +13,7 @@ h2 {
     font-weight: 100;
 }
 
-form, fieldset
-{
+form, fieldset {
     padding: 3em;
 }
 
@@ -108,3 +107,21 @@ nav > a {
     font-weight: bold;
 }
 
+.form-validation {
+    width: 40%;
+    display: inline-block;
+}
+
+
+.form-validation-log {
+    width: 35%;
+    padding: 2em;
+    display: inline-block;
+    background-color: #808080;
+    color: #fff;
+    border: 1 solid #D9D1BA;
+    font-size: 1.5em;
+    /*Quick Hack*/
+    top: -200px;
+    position: relative;
+}

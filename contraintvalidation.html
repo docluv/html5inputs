@@ -17,7 +17,7 @@
             </nav>
         </header>
         <section>
-            <form>
+            <form class="form-validation">
                 <fieldset>
                     <legend>Leave A Review</legend>
                     <ul class="vertical-list form-inputs">
@@ -31,7 +31,7 @@
                         <li><input type="datetime" name="datetimeex" placeholder="Date Time" /></li>
                         <li><input type="range" min="-100" max="100" value="0" step="10" name="power" list="powers">
                         </li>
-                        <li> <label>Feeling: <input name="f" type="text" oninput="check(this)"></label></li>
+                        <li> <label>Feeling: <input name="f" type="text" id="yourmood"></label></li>
                         <li><input type="range" min="0" max="100" step="20" value="50"></li>
                         <li><textarea placeholder="Enter Your Review" tabindex="4" id="MovieReview" autocorrect="on" required spellcheck="true"></textarea></li>
                         <li><input type="submit" id="reviewSubmit" class="btn" tabindex="5" /></li>
@@ -50,21 +50,9 @@
                     </datalist>
                 </fieldset>
             </form>
+            <span class="form-validation-log"></span>
         </section>
+        <script src="js/validation.js"></script>
 
-        <script>
-            function check(input) {
-                if (input.value == "good" ||
-                  input.value == "fine" ||
-                  input.value == "tired") {
-                    input.setCustomValidity('"' + input.value + '" is not a feeling.');
-                    input.checkValidity();
-                    input.oninvalid();
-                } else {
-                    // input is fine -- reset the error message
-                    input.setCustomValidity('');
-                }
-            }
-        </script>
     </body>
 </html>
